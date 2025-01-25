@@ -1,0 +1,141 @@
+body{
+    font-family: Roboto;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+header{
+    /* background-color: red; */
+    width: 1200px;
+    max-width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    z-index: 999;
+    position: relative;
+}
+
+header nav{
+    /* background-color: yellow; */
+    display: flex;
+    gap: 1.2rem;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.slider{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+}
+
+.slider .list .item{
+    /* background-color: brown; */
+    position: absolute;
+    inset: 0 0 0 0;
+
+}
+
+.slider .list .item > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: red;
+}
+
+.slider .list .item .detail{
+    /*background-color: blue;
+    */position: absolute;
+    top: 20%;
+    width: 1200px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+    text-shadow: 0 5px 10px #000;
+}
+
+.slider .list .item .detail .title{
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    margin: 0.6rem;
+}
+
+.slider .list .item .detail .name{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    margin-bottom: 0.8rem;
+    /* background-color: aqua; */
+
+    background: linear-gradient(#0d41e1, #07c8f9);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+.slider .list .item .detail figure{
+    /* background-color: cyan; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.slider .list .item .detail figure img{
+    width: 2.7rem;
+}
+.slider .list .item .detail figure figcaption{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    /* background-color: red; */
+    max-width: 70%;
+}
+
+.slider .list .item .detail .desc {
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 1rem;
+    max-width: 37rem;  
+}
+.slider .list .item .detail .more{
+    text-decoration: none;
+    color: #0d41e1;
+    background-color: white;
+    border-radius: 3rem;
+    display: inline-block;
+   font-size: 1rem;
+   padding: 0.6rem 0.8rem;
+   margin-top: 1.4rem;
+   text-shadow: none;
+}
+
+
+.slider .list .item .detail .more:hover{
+    background-color: #0d41e1;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
