@@ -423,3 +423,9 @@ jika prev maka image body akan shrink slider slide dari kanan ke kiri dan gambar
     left: 80%;
   }
 }
+
+@media screen and (max-width: 226px) {
+  header nav a{
+    font-size: 0.3rem;
+  }
+}
