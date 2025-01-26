@@ -1,141 +1,426 @@
-body{
-    font-family: Roboto;
-    font-weight: 400;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+
+  font-size: 1.2rem;
 }
 
+header {
+  /* background-color: red; */
+  width: 1200px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
 
-header{
-    /* background-color: red; */
-    width: 1200px;
-    max-width: 80%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    z-index: 999;
-    position: relative;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  z-index: 999;
 }
 
-header nav{
-    /* background-color: yellow; */
-    display: flex;
-    gap: 1.2rem;
+header nav {
+  display: flex;
+  gap: 1.2rem;
 }
 
-header nav a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.2rem;
 }
 
-.slider{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: -50px;
+.slider {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -50px;
+  position: relative;
 }
 
-.slider .list .item{
-    /* background-color: brown; */
-    position: absolute;
-    inset: 0 0 0 0;
-
+.slider .list .item {
+  position: absolute;
+  inset: 0 0 0 0;
 }
 
-.slider .list .item > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: red;
+.slider .list .item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.slider .list .item .detail{
-    /*background-color: blue;
-    */position: absolute;
-    top: 20%;
-    width: 1200px;
-    max-width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+.slider .list .item .detail {
+  /* background-color: aqua; */
+  position: absolute;
+  top: 20%;
+  width: 1200px;
+  max-width: 80%;
+  left: 50%;
 
-    text-shadow: 0 5px 10px #000;
+  transform: translateX(-50%);
+
+  text-shadow: 0 5px 10px #000;
 }
 
-.slider .list .item .detail .title{
-    font-size: 1rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    margin: 0.6rem;
+.slider .list .item .detail .title {
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  margin: 0.6rem;
 }
 
-.slider .list .item .detail .name{
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-    letter-spacing: 0.1rem;
-    line-height: 3.5rem;
-    margin-bottom: 0.8rem;
-    /* background-color: aqua; */
+.slider .list .item .detail .name {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 3.5rem;
+  margin-bottom: 0.8rem;
 
-    background: linear-gradient(#0d41e1, #07c8f9);
-    background-clip: text;
-    color: transparent;
-    text-shadow: none;
+  background: linear-gradient(#0d41e1, #07c8f9);
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
 }
 
-.slider .list .item .detail figure{
-    /* background-color: cyan; */
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+.slider .list .item .detail figure {
+  /* background-color: cyan; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.slider .list .item .detail figure img{
-    width: 2.7rem;
+.slider .list .item .detail figure img {
+  width: 2.7rem;
 }
-.slider .list .item .detail figure figcaption{
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.1rem;
-    /* background-color: red; */
-    max-width: 70%;
+.slider .list .item .detail figure figcaption {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
 }
 
 .slider .list .item .detail .desc {
-    margin-top: 1rem;
-    font-weight: 100;
-    font-size: 1rem;
-    max-width: 37rem;  
+  margin-top: 1rem;
+  font-weight: 100;
+  font-size: 1rem;
+  max-width: 45%;
+  /* background-color: #0d41e1; */
 }
-.slider .list .item .detail .more{
-    text-decoration: none;
-    color: #0d41e1;
-    background-color: white;
-    border-radius: 3rem;
-    display: inline-block;
-   font-size: 1rem;
-   padding: 0.6rem 0.8rem;
-   margin-top: 1.4rem;
-   text-shadow: none;
-}
-
-
-.slider .list .item .detail .more:hover{
-    background-color: #0d41e1;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
+.slider .list .item .detail .more {
+  text-decoration: none;
+  color: #0d41e1;
+  background-color: white;
+  border-radius: 3rem;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  margin-top: 1.4rem;
+  text-shadow: none;
 }
 
+.slider .list .item .detail .more:hover {
+  background-color: #0d41e1;
+  color: white;
+  cursor: pointer;
+}
 
+.thumbnail {
+  position: absolute;
+  bottom: 50px;
+  left: 65%;
+  display: flex;
+  gap: 20px;
+  max-width: max-content;
+  z-index: 999;
+  /* background-color: #000; */
+  overflow: hidden;
+}
+
+.thumbnail .item {
+  position: relative;
+  width: 150px;
+  height: 250px;
+  /* background-color: #0d41e1; */
+  flex-shrink: 0;
+  /* overflow:hidden ; */
+}
+
+.thumbnail .item img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnail .item .detail {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  margin-right: 5px;
+}
+
+.thumbnail .item .detail .name {
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 5px;
+
+  text-shadow: 1px 1px 1px black;
+}
+
+.thumbnail .item .detail blockquote {
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-align: right;
+  text-shadow: 1px 1px 1px black;
+}
+
+.arrows {
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.arrows button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px black;
+  font-family: monospace;
+  color: #0d41e1;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.arrows button:hover {
+  background-color: #0d41e1;
+  color: white;
+}
+
+.slider .list .item:nth-child(1) {
+  z-index: 1;
+}
+
+.slider .list .item:nth-child(1) .title,
+.slider .list .item:nth-child(1) .name,
+.slider .list .item:nth-child(1) figure,
+.slider .list .item:nth-child(1) .desc,
+.slider .list .item:nth-child(1) .more {
+  transform: translateY(50px);
+  filter: blur(50px);
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: showDetail;
+}
+
+@keyframes showDetail {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.slider .list .item:nth-child(1) .title {
+  animation-delay: 1s;
+}
+.slider .list .item:nth-child(1) .name {
+  animation-delay: 1.2s;
+}
+.slider .list .item:nth-child(1) figure {
+  animation-delay: 1.4s;
+}
+.slider .list .item:nth-child(1) .desc {
+  animation-delay: 1.6s;
+}
+.slider .list .item:nth-child(1) .more {
+  animation-delay: 1.8;
+}
+/* 
+animasi
+jika next maka image thumbnail akan grow dan slider slide dari kiri ke kanan dan gambar yang diambil nomor 2
+
+jika prev maka image body akan shrink slider slide dari kanan ke kiri dan gambar yang diambil nomor terakhir
+*/
+
+/* animasi growimage thumbnail paling kiri */
+.slider.next .list .item:nth-child(1) > img {
+  position: absolute;
+  bottom: 50px;
+  left: 65%;
+  width: 150px;
+  height: 250px;
+
+  animation-name: growImage;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes growImage {
+  to {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* animasi thumbnail slide ke kiri */
+.slider.next .thumbnail {
+  transform: translateX(-150px);
+  animation-name: transformThumbnail;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes transformThumbnail {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slider.next .thumbnail .item:nth-last-child(1) {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: showThumbnail;
+}
+
+@keyframes showThumbnail {
+  to {
+    width: 150px;
+    opacity: 1;
+  }
+}
+
+/* prev */
+.slider.prev .list .item:nth-child(2) {
+  z-index: 2;
+}
+
+/* kecilin gambar */
+.slider.prev .list .item:nth-child(2) > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: shrinkImage;
+}
+
+@keyframes shrinkImage {
+  to {
+    bottom: 50px;
+    left: 65%;
+    width: 150px;
+    height: 250px;
+    border-radius: 15px;
+  }
+}
+
+.slider.prev .thumbnail .item:nth-child(1) {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: showThumbnail;
+}
+
+.slider.prev .list .item:nth-child(2) .title,
+.slider.prev .list .item:nth-child(2) .name,
+.slider.prev .list .item:nth-child(2) figure,
+.slider.prev .list .item:nth-child(2) .desc,
+.slider.prev .list .item:nth-child(2) .more {
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-name: hideDetail;
+}
+
+@keyframes hideDetail {
+  to {
+    transform: translateY(-150px);
+    filter: blur(20px);
+    opacity: 0;
+  }
+}
+
+/* disable button while animating */
+
+.slider.next .arrows button,
+.slider.prev .arrows button {
+  pointer-events: none;
+}
+
+/* mobile */
+@media screen and (max-width: 678px) {
+  .slider .list .item .detail .name {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .slider .list .item .detail .desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider .thumbnail {
+    bottom: 20px;
+  }
+
+  .slider .thumbnail .item {
+    width: 120px;
+    height: 150px;
+  }
+
+  .arrows{
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header nav a{
+    /* background-color: #0d41e1; */
+    font-size: 0.8rem;
+  }
+
+  .arrows{
+    left: 50%;
+  }
+
+  .thumbnail{
+    left: 80%;
+  }
+}
