@@ -410,9 +410,8 @@ jika prev maka image body akan shrink slider slide dari kanan ke kiri dan gambar
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   header nav a{
-    /* background-color: #0d41e1; */
     font-size: 0.8rem;
   }
 
